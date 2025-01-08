@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Css/project.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <title>Vieweg Travel</title>
+    <link rel="icon" href="Images/Vieweg travel (1).png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@300&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="up hide">
+        <i class="fa-solid fa-arrow-up"></i>
+    </div>
+    <div class="whats">
+        <a href="https://wa.me/01061450979" target="_blank"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+    </div>
+    <div class="nav_bar">
+        <div class="container">
+            <img src="Images/tropicius - travel agency (70 × 40 بيكسل) (45 × 40 بيكسل).png" class="logo" />
+            <button class="humbg">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </button>
+            <div class="comp" id="comp">
+                <ul class="addresses" id="addresses">
+                    <li><a href="" class="ac active">Home</a></li>
+                    <li><a href="#trips" class="ac travels">Trips</a></li>
+                    <li class="padd"><a href="#content" class="ac contacts">Contact Us</a></li>
+                    <li class="nav_list">
+                        <div class="lang">
+                            <img src="Images/Am.png" id="img" />
+                            <button class="arrow">
+                                <i class="fa fa-angle-down" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                        <div class="list">
+                            <div class="items select" data-index="1">
+                                <img src="Images/Am.png" />
+                                <span>English Us</span>
+                            </div>
+                            <div class="items" data-index="2">
+                                <img src="Images/rus (2).png" />
+                                <span>Russia</span>
+                            </div>
+                            <div class="items" data-index="3">
+                                <img src="Images/pol.png" />
+                                <span>Polish</span>
+                            </div>
+                            <div class="items" data-index="4">
+                                <img src="Images/It.png" />
+                                <span>Italia</span>
+                            </div>
+                            <div class="items" data-index="5">
+                                <img src="Images/Fr.png" />
+                                <span>France</span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div class="homeSlider">
+    <div>
+    <div class="Hslider">
+        <div class="Hslides">
+            <img class="Himgslide" src="Images/slide-3.jpg" />
+            <div class="layer">
+                <div class="homeInfo">
+                    <h1>Experience Egypt Like Never Before</h1>
+                    <p>A perfectly tailored trip mainly designed to give you more time space and comfort to visit the
+                        Egyptian...</p>
+                    <div class="bton"><a href="Trips.html">Book Now</a></div>
+                </div>
+            </div>
+        </div>
+        <div class="Hslides ">
+            <img class="Himgslide" src="Images/نسس.jpg" />
+            <div class="layer">
+                <div class="homeInfo">
+                    <h1>Experience Egypt Like Never Before</h1>
+                    <p>A perfectly tailored trip mainly designed to give you more time space and comfort to visit the
+                        Egyptian...</p>
+                    <div class="bton"><a href="Trips.html">Book Now</a></div>
+                </div>
+            </div>
+        </div>
+        <div class="Hslides ">
+            <img class="Himgslide" src="Images/cairo-3.jpg" />
+            <div class="layer">
+                <div class="homeInfo">
+                    <h1>Experience Egypt Like Never Before</h1>
+                    <p>A perfectly tailored trip mainly designed to give you more time space and comfort to visit the
+                        Egyptian...</p>
+                    <div class="bton"><a href="Trips.html">Book Now</a></div>
+                </div>
+            </div>
+        </div>
+        <div class="arrows">
+            <i class="fa fa-chevron-left left" aria-hidden="true" onclick="HslidesWithArrows(1)"
+                style="left:6% ; top:50%;"></i>
+            <i class="fa fa-chevron-right right" aria-hidden="true" onclick="HslidesWithArrows(-1)"
+                style="right:6% ; top:50%;"></i>
+        </div>
+        <div class="hSlides">
+            <i class="fa fa-window-minimize hSlide" aria-hidden="true" data-index="1"></i>
+            <i class="fa fa-window-minimize hSlide" aria-hidden="true" data-index="2"></i>
+            <i class="fa fa-window-minimize hSlide" aria-hidden="true" data-index="3"></i>
+        </div>
+    </div>
+</div>
+    <div class="trips" id="trips">
+        <div>
+            <h1>Book Your Excursions Now In Egypt</h1>
+            <p>Explore and Experience The Magic Of Egypt During Your Trip.</p>
+        </div>
+        <div class="tabs">
+            <ul class="tabList">
+                <li class="tab">All</li>
+                <li>Cairo</li>
+                <li>Sharm El Shaikh</li>
+            </ul>
+        </div>
+        <div class="tabImages">
+            <div class="program">
+                <div class="each_prg">
+                    <div class="pro_top">
+                        <img src="Images/sh-1.jpg">
+                        <div class="about">
+                            <h4>Sharm El Sheikh City which sunny</h4>
+                            <div class="trip_info">
+                                <span>Trip No: 5</span>
+                                <span>price: 65$</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pro_bottom">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde adipisci doloremque ab
+                            provident quibusdam
+                            suscipit qui ducimus aspernatur, architecto cumque quo! Exercitationem incidunt animi
+                            voluptatum magni
+                            voluptatibus, nesciunt nam libero eaque odit quidem laboriosam similique, autem facilis
+                            voluptas porro, sint
+                            odio! Nostrum, iure excepturi dolore facere ut fuga maiores amet.</p>
+                    </div>
+                    <button>More Details</button>
+                </div>
+                <div class="each_prg">
+                    <div class="pro_top">
+                        <img src="Images/slide-2.jpg">
+                        <div class="about">
+                            <h4>Nerverland Show</h4>
+                            <div class="trip_info">
+                                <span>Trip No: 6</span>
+                                <span>price: 95$</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pro_bottom">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde adipisci doloremque ab
+                            provident quibusdam
+                            suscipit qui ducimus aspernatur, architecto cumque quo! Exercitationem incidunt animi
+                            voluptatum magni
+                            voluptatibus, nesciunt nam libero eaque odit quidem laboriosam similique, autem facilis
+                            voluptas porro, sint
+                            odio! Nostrum, iure excepturi dolore facere ut fuga maiores amet.</p>
+                    </div>
+                    <button>More Details</button>
+                </div>
+                <div class="each_prg">
+                    <div class="pro_top">
+                        <img src="Images/tri2.jpg">
+                        <div class="about">
+                            <h4>Snorkelling at Ras Mohamed</h4>
+                            <div class="trip_info">
+                                <span>Trip No: 7</span>
+                                <span>price: 45$</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pro_bottom">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde adipisci doloremque ab
+                            provident quibusdam
+                            suscipit qui ducimus aspernatur, architecto cumque quo! Exercitationem incidunt animi
+                            voluptatum magni
+                            voluptatibus, nesciunt nam libero eaque odit quidem laboriosam similique, autem facilis
+                            voluptas porro, sint
+                            odio! Nostrum, iure excepturi dolore facere ut fuga maiores amet.</p>
+                    </div>
+                    <button>More Details</button>
+                </div>
+                <div class="each_prg">
+                    <div class="pro_top">
+                        <img src="Images/tri4.jpg">
+                        <div class="about">
+                            <h4>Intro Dive at Ras Mohamed</h4>
+                            <div class="trip_info">
+                                <span>Trip No: 8</span>
+                                <span>Price: 95$</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pro_bottom ">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde adipisci doloremque ab
+                            provident quibusdam
+                            suscipit qui ducimus aspernatur, architecto cumque quo! Exercitationem incidunt animi
+                            voluptatum magni
+                            voluptatibus, nesciunt nam libero eaque odit quidem laboriosam similique, autem facilis
+                            voluptas porro, sint
+                            odio! Nostrum, iure excepturi dolore facere ut fuga maiores amet.</p>
+                    </div>
+                    <button>More Details</button>
+                </div>
+                <div class="each_prg">
+                    <div class="pro_top">
+                        <img src="Images/Cairo-1.jpg">
+                        <div class="about">
+                            <h4>Intro Dive at Ras Mohamed</h4>
+                            <div class="trip_info">
+                                <span>Trip No: 8</span>
+                                <span>Price: 95$</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pro_bottom ">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde adipisci doloremque ab
+                            provident quibusdam
+                            suscipit qui ducimus aspernatur, architecto cumque quo! Exercitationem incidunt animi
+                            voluptatum magni
+                            voluptatibus, nesciunt nam libero eaque odit quidem laboriosam similique, autem facilis
+                            voluptas porro, sint
+                            odio! Nostrum, iure excepturi dolore facere ut fuga maiores amet.</p>
+                    </div>
+                    <button>More Details</button>
+                </div>
+                <div class="each_prg">
+                    <div class="pro_top">
+                        <img src="Images/cairo-2.jpg">
+                        <div class="about">
+                            <h4>Intro Dive at Ras Mohamed</h4>
+                            <div class="trip_info">
+                                <span>Trip No: 8</span>
+                                <span>Price: 95$</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pro_bottom ">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde adipisci doloremque ab
+                            provident quibusdam
+                            suscipit qui ducimus aspernatur, architecto cumque quo! Exercitationem incidunt animi
+                            voluptatum magni
+                            voluptatibus, nesciunt nam libero eaque odit quidem laboriosam similique, autem facilis
+                            voluptas porro, sint
+                            odio! Nostrum, iure excepturi dolore facere ut fuga maiores amet.</p>
+                    </div>
+                    <button>More Details</button>
+                </div>
+            </div>
+        </div>
+        <div class="tabImages" style="display: none;">
+            <div class="program">
+                <div class="each_prg">
+                    <div class="pro_top">
+                        <img src="Images/slide-2.jpg">
+                        <div class="about">
+                            <h4>Nerverland Show</h4>
+                            <div class="trip_info">
+                                <span>Trip No: 6</span>
+                                <span>price: 95$</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pro_bottom">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde adipisci doloremque ab
+                            provident quibusdam
+                            suscipit qui ducimus aspernatur, architecto cumque quo! Exercitationem incidunt animi
+                            voluptatum magni
+                            voluptatibus, nesciunt nam libero eaque odit quidem laboriosam similique, autem facilis
+                            voluptas porro, sint
+                            odio! Nostrum, iure excepturi dolore facere ut fuga maiores amet.</p>
+                    </div>
+                    <button>More Details</button>
+                </div>
+                <div class="each_prg">
+                    <div class="pro_top">
+                        <img src="Images/tri2.jpg">
+                        <div class="about">
+                            <h4>Snorkelling at Ras Mohamed</h4>
+                            <div class="trip_info">
+                                <span>Trip No: 7</span>
+                                <span>price: 45$</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pro_bottom">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde adipisci doloremque ab
+                            provident quibusdam
+                            suscipit qui ducimus aspernatur, architecto cumque quo! Exercitationem incidunt animi
+                            voluptatum magni
+                            voluptatibus, nesciunt nam libero eaque odit quidem laboriosam similique, autem facilis
+                            voluptas porro, sint
+                            odio! Nostrum, iure excepturi dolore facere ut fuga maiores amet.</p>
+                    </div>
+                    <button>More Details</button>
+                </div>
+                <div class="each_prg">
+                    <div class="pro_top">
+                        <img src="Images/tri4.jpg">
+                        <div class="about">
+                            <h4>Intro Dive at Ras Mohamed</h4>
+                            <div class="trip_info">
+                                <span>Trip No: 8</span>
+                                <span>Price: 95$</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pro_bottom ">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde adipisci doloremque ab
+                            provident quibusdam
+                            suscipit qui ducimus aspernatur, architecto cumque quo! Exercitationem incidunt animi
+                            voluptatum magni
+                            voluptatibus, nesciunt nam libero eaque odit quidem laboriosam similique, autem facilis
+                            voluptas porro, sint
+                            odio! Nostrum, iure excepturi dolore facere ut fuga maiores amet.</p>
+                    </div>
+                    <button>More Details</button>
+                </div>
+                <div class="each_prg">
+                    <div class="pro_top">
+                        <img src="Images/Cairo-1.jpg">
+                        <div class="about">
+                            <h4>Intro Dive at Ras Mohamed</h4>
+                            <div class="trip_info">
+                                <span>Trip No: 8</span>
+                                <span>Price: 95$</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pro_bottom ">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde adipisci doloremque ab
+                            provident quibusdam
+                            suscipit qui ducimus aspernatur, architecto cumque quo! Exercitationem incidunt animi
+                            voluptatum magni
+                            voluptatibus, nesciunt nam libero eaque odit quidem laboriosam similique, autem facilis
+                            voluptas porro, sint
+                            odio! Nostrum, iure excepturi dolore facere ut fuga maiores amet.</p>
+                    </div>
+                    <button>More Details</button>
+                </div>
+            </div>
+        </div>
+        <div class="tabImages" style="display: none;">
+            <div class="program">
+                <div class="each_prg">
+                    <div class="pro_top">
+                        <img src="Images/tri2.jpg">
+                        <div class="about">
+                            <h4>Snorkelling at Ras Mohamed</h4>
+                            <div class="trip_info">
+                                <span>Trip No: 7</span>
+                                <span>price: 45$</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pro_bottom">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde adipisci doloremque ab
+                            provident quibusdam
+                            suscipit qui ducimus aspernatur, architecto cumque quo! Exercitationem incidunt animi
+                            voluptatum magni
+                            voluptatibus, nesciunt nam libero eaque odit quidem laboriosam similique, autem facilis
+                            voluptas porro, sint
+                            odio! Nostrum, iure excepturi dolore facere ut fuga maiores amet.</p>
+                    </div>
+                    <button>More Details</button>
+                </div>
+                <div class="each_prg">
+                    <div class="pro_top">
+                        <img src="Images/Cairo-1.jpg">
+                        <div class="about">
+                            <h4>Intro Dive at Ras Mohamed</h4>
+                            <div class="trip_info">
+                                <span>Trip No: 8</span>
+                                <span>Price: 95$</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pro_bottom ">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde adipisci doloremque ab
+                            provident quibusdam
+                            suscipit qui ducimus aspernatur, architecto cumque quo! Exercitationem incidunt animi
+                            voluptatum magni
+                            voluptatibus, nesciunt nam libero eaque odit quidem laboriosam similique, autem facilis
+                            voluptas porro, sint
+                            odio! Nostrum, iure excepturi dolore facere ut fuga maiores amet.</p>
+                    </div>
+                    <button>More Details</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content" id="content">
+        <div class="last">
+            <h1>GET IN TOUCH<span>.</span></h1>
+            <form method="post">
+                <input type="text" placeholder="your name" />
+                <input type="email" placeholder="your email" />
+                <input type="text" placeholder="phone number" />
+                <input type="text" placeholder="subject" />
+                <textarea placeholder="write message"></textarea>
+                <button type="submit">send message</button>
+            </form>
+        </div>
+    </div>
+    <div class="fotter">
+        <div><i class="fa fa-facebook" aria-hidden="true"></i></div>
+        <div><i class="fa fa-twitter" aria-hidden="true"></i></div>
+        <div><i class="fa fa-google" aria-hidden="true"></i></div>
+        <div><i class="fa fa-instagram" aria-hidden="true"></i></div>
+    </div>
+    <script src="JS/main.js"></script>
+    <script src="JS/home.js"></script>
+</body>
+
+</html>

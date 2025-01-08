@@ -1,0 +1,1153 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Rubik', sans-serif;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@300&display=swap");
+
+:root {
+  --blue: #1385e2;
+  --dark: #066f86;
+  --blue-dark: rgb(59, 82, 255);
+  --dark-blue: #383a8b;
+  --orange: #c9410b;
+}
+
+::-webkit-scrollbar {
+  background-color: var(--dark);
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--blue);
+}
+
+.logo {
+  height: 50px;
+  margin-left: 70px;
+}
+
+.nav_bar {
+  width: 100%;
+  background-color: var(--dark);
+}
+
+.nav_bar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  width: 90%;
+}
+
+
+.addresses {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.addresses li {
+  list-style: none;
+  padding: 15px;
+}
+
+.addresses li a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.comp {
+  width: 35%;
+}
+
+.humbg {
+  padding: 2px 13px;
+  border: 1px solid var(--blue);
+  border-radius: 10px;
+  background-color: transparent;
+  color: var(--blue);
+  font-size: 30px;
+  cursor: pointer;
+  display: none;
+}
+
+.active {
+  color: var(--blue) !important;
+}
+
+.items img {
+  height: 23px;
+}
+
+.nav_list {
+  width: 30%;
+  position: relative;
+}
+
+.lang {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.lang .arrow {
+  color: white;
+  background-color: transparent;
+  border-style: none;
+  cursor: pointer;
+}
+
+.lang img {
+  padding: 0px 5px;
+  width: 40px;
+}
+
+.list {
+  margin-top: 5px;
+  padding: 7px;
+  border: 1px solid white;
+  border-radius: 5px;
+  background-color: var(--blue-dark);
+  width: 140px;
+  overflow: hidden;
+  transform: scale(0);
+  position: absolute;
+  left: 0px;
+  top: 100%;
+  z-index: 1000;
+}
+
+.items {
+  display: flex;
+  justify-content: flex-start;
+  height: 32px;
+  flex-wrap: wrap;
+  padding: 5px;
+  border-bottom: 1px solid var(--blue);
+  font-size: 11px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.items span {
+  padding: 5px;
+  color: white;
+}
+
+.items:last-child {
+  border-bottom: none;
+}
+
+.select,
+.items:hover {
+  background-color: var(--dark-blue);
+}
+
+.viewing {
+  transform: scale(1);
+}
+
+.first {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 70px;
+}
+
+.first .slider,
+.first .tripInfo {
+  width: 47%;
+  overflow: hidden;
+}
+
+.imgslide {
+  display: none;
+  height: 430px;
+  width: 680px;
+  margin-right: 10px;
+}
+
+.first .slider {
+  margin-left: 100px;
+  position: relative;
+}
+
+.arrows i {
+  position: absolute;
+  font-size: 35px;
+  color: rgb(150, 142, 150);
+  cursor: pointer;
+  top: 44%;
+  font-weight: bolder !important;
+}
+
+.arrows .left {
+  left: 4%;
+}
+
+.arrows .right {
+  right: 10%;
+}
+
+.first .tripInfo {
+  padding-right: 80px;
+}
+
+.selectors {
+  margin-top: -65px;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+
+.img2 {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  margin: 0px 5px;
+  cursor: pointer;
+}
+
+.img2:hover,
+.hover {
+  transform: scale(1.3);
+  border: 3px solid white;
+}
+
+.animation {
+  animation-name: slideAnimation;
+  animation-duration: 0.9s;
+}
+
+@keyframes slideAnimation {
+  0% {
+    opacity: 0.2;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.info h1 {
+  color: var(--orange);
+  font-size: 39px;
+  font-weight: bolder;
+}
+
+.text {
+  color: rgb(0, 1, 7);
+  font-size: 19px;
+  padding: 15px 0px;
+  line-height: 28px;
+}
+
+.data i {
+  color: var(--orange);
+  font-size: 20px;
+  font-weight: bold;
+  padding-left: 10px;
+}
+
+.data div {
+  color: var(--dark-blue);
+  font-weight: bolder;
+  margin: 10px 0px;
+  font-size: 20px;
+}
+
+.book {
+  width: 160px;
+  height: 40px;
+  padding: 8px;
+  border-radius: 5px;
+  border-style: none;
+  background-color: var(--blue);
+  color: white;
+  cursor: pointer;
+  font-size: 19px;
+  text-align: center;
+}
+
+.h,
+.data div i {
+  font-weight: 600;
+}
+
+.slider :hover {
+  color: rgba(255, 255, 255, 0.856);
+}
+
+.discription {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0px 50px;
+  flex-wrap: wrap;
+}
+
+.discription .info {
+  width: 50%;
+}
+
+.discription .cards {
+  width: 38%;
+}
+
+.discription .info h1 {
+  font-size: 55px;
+  color: black;
+  font-weight: 300;
+  font-family: "Montserrat", sans-serif;
+}
+
+.discription .info p {
+  font-size: 20px;
+  padding: 15px 0px;
+  line-height: 30px;
+}
+
+.cards .disc_card {
+  border: 1px solid #ccccccda;
+  border-radius: 5px;
+  padding: 15px;
+  margin: 18px 0px;
+  box-shadow: 1px 1px 7px 1px var(--blue);
+}
+
+.disc_card .top {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.disc_card .top span {
+  font-size: 20px;
+}
+
+.disc_card ul {
+  padding-left: 28px;
+}
+
+.disc_card p {
+  padding-left: 5px;
+}
+
+.top span {
+  color: var(--orange);
+  font-size: 17px;
+  font-weight: bolder;
+}
+
+.top span i {
+  font-size: 20px;
+  font-weight: lighter;
+  padding-right: 10px;
+}
+
+.disc_card .bottom {
+  padding-top: 15px;
+  color: var(--dark);
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.remove {
+  display: none;
+}
+
+.programs h1 {
+  margin: 50px 0px;
+  text-align: center;
+  font-size: 2.5vw;
+}
+
+.program {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+
+.each_prg {
+  width: 280px;
+}
+
+.each_prg .pro_top img {
+  width: 100%;
+  height: 180px;
+}
+
+.each_prg {
+  margin-right: 30px;
+}
+
+.each_prg .about h4 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+  color: rgb(255, 255, 255);
+  font-size: 19px;
+  font-weight: 800;
+  margin-bottom: 5px;
+}
+
+.each_prg .pro_top .about {
+  background-color: var(--dark);
+  margin-top: -5px;
+  height: 80px;
+  padding: 15px;
+}
+
+.pro_top .trip_info {
+  font-size: 17px;
+  color: rgb(192, 139, 23);
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+  padding: 5px 0px;
+}
+
+.each_prg .pro_bottom {
+  font-size: 17px;
+  font-weight: 500;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  overflow: hidden;
+  line-height: 25px;
+  color: #636161;
+}
+
+.each_prg button {
+  padding: 7px;
+  border-radius: 5px;
+  border-style: none;
+  margin: 15px 0px;
+  background-color: var(--blue);
+  color: white;
+  margin-bottom: 60px;
+  cursor: pointer;
+  font-size: 17px;
+  font-weight: 500;
+  width: 130px;
+  height: 38px;
+}
+
+.fotter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--dark);
+  height: 90px;
+}
+
+.fotter div {
+  margin: 10px;
+  position: relative;
+  color: white;
+  font-size: 20px;
+  border: 1px solid white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.fotter div:hover,
+.whats:hover {
+  background-color: var(--dark-blue);
+}
+
+.up {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  font-size: 20px;
+  color: white;
+  border: 1px solid white;
+  background-color: var(--dark-blue);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 1s ease-in-out;
+}
+
+.up:hover {
+  background-color: #10114d;
+  color: var(--dark);
+  transition: all 0.8s ease-in-out;
+}
+
+.whats {
+  position: fixed;
+  left: 20px;
+  bottom: 20px;
+  font-size: 30px;
+  border: 1px solid #46c254;
+  background-color: #46c254;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.whats a {
+  color: white;
+}
+
+.whats:hover {
+  color: var(--dark);
+  transition: all 0.8s ease-in-out;
+}
+
+.fotter div:hover {
+  background-color: var(--dark-blue);
+  transition: all 0.8s ease-in-out;
+}
+
+.hide {
+  right: -50px;
+  bottom: 100px;
+  transition: all 0.5s ease-in-out;
+}
+
+@media(max-width: 1300px) {
+
+  .first .slider {
+    width: 44%;
+    height: 380px;
+  }
+
+  .first .tripInfo {
+    width: 47%;
+    height: 350px;
+    margin-left: 20px;
+  }
+
+
+  .slider .slides img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .info h1 {
+    font-size: 30px;
+  }
+
+  .text {
+    font-size: 16px;
+  }
+
+  .data i {
+    font-size: 17px;
+  }
+
+  .data div {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 1119px) {
+  .humbg {
+    display: inline-block;
+  }
+
+  .nav_bar .container {
+    flex-wrap: wrap;
+  }
+
+  .nav_bar .comp {
+    width: 100%;
+    height: 0px;
+    overflow: hidden;
+  }
+
+  .nav_bar .collap {
+    height: fit-content;
+    overflow: visible;
+  }
+
+  .addresses {
+    flex-direction: column;
+    padding-top: 15px;
+    justify-content: flex-start;
+    align-items: start;
+    margin-left: 70px;
+  }
+
+  .addresses li {
+    padding: 7px;
+  }
+
+  .padd {
+    padding-bottom: 0px !important;
+  }
+
+  .lang {
+    justify-content: flex-start;
+  }
+
+  .text {
+    padding: 7px 0px 0px 0px;
+  }
+
+  .discription {
+    margin: 0px 20px;
+  }
+
+  .discription .cards,
+  .discription .info {
+    width: 100%;
+  }
+
+  .discription .info h1 {
+    font-size: 6.5vw;
+    text-align: left;
+  }
+
+  .discription .info p {
+    font-size: 18px;
+  }
+
+  .first {
+    flex-wrap: wrap;
+    margin: 0px;
+  }
+
+  .first .info h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    text-align: left;
+    margin: 25px 0px;
+  }
+
+  .first .slider,
+  .first .tripInfo {
+    width: 80%;
+    height: fit-content;
+  }
+
+  .first .slider {
+    margin: 60px auto 0px auto;
+  }
+
+  .first .tripInfo {
+    margin: 10px auto 0px auto;
+    height: fit-content;
+  }
+
+  .first .tripInfo .info {
+    width: 100%;
+    margin-right: 15px;
+  }
+
+  .slider .slides img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .text {
+    font-size: 19px;
+  }
+
+  .data i {
+    font-size: 20px;
+  }
+
+  .data div {
+    font-size: 20px;
+  }
+
+  .arrows i {
+    font-size: 30px;
+  }
+
+  .arrows .left {
+    left: 4%;
+  }
+
+  .arrows .right {
+    right: 5%;
+  }
+}
+
+@media (max-width: 700px) {
+  .text {
+    font-size: 17px;
+  }
+
+  .data div {
+    font-size: 17px;
+  }
+
+  .data i {
+    font-size: 17px;
+  }
+
+  .logo,
+  .addresses {
+    margin-left: 20px;
+  }
+
+  .logo {
+    height: 35px;
+  }
+
+  .img2 {
+    margin: 5px;
+    height: 45px;
+    width: 45px;
+  }
+
+  .first .info h1 {
+    font-size: 30px;
+  }
+
+  .humbg {
+    font-size: 22px;
+    padding: 4px 10px;
+  }
+
+  .program .each_prg {
+    width: 90%;
+    height: fit-content;
+    margin: 10px;
+  }
+
+  .programs h1 {
+    font-size: 5vw;
+  }
+
+  .fotter div {
+    font-size: 15px;
+    margin: 5px;
+  }
+
+  .first .info .book {
+    width: 140px;
+    height: 35px;
+    font-size: 16px;
+  }
+
+  .first .slider,
+  .first .tripInfo {
+    width: 98%;
+  }
+
+  .first .slider {
+    margin-top: 25px;
+  }
+
+  .first .tripInfo {
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 450px) {
+  .discription .info h1 {
+    font-size: 30px;
+    font-weight: 900;
+  }
+
+  .discription .info p {
+    font-size: 18px;
+  }
+
+  .disc_card .top span {
+    font-size: 18px;
+  }
+
+  .first .info h1 {
+    font-size: 25px;
+  }
+
+  .disc_card .top span {
+    font-size: 17px;
+  }
+
+  .fotter div {
+    font-size: 13px;
+    margin: 3px;
+  }
+
+  .program {
+    margin: 10px;
+  }
+
+  .program .each_prg {
+    width: 100%;
+  }
+
+  .img2 {
+    height: 35px;
+    width: 35px;
+  }
+
+  .selectors {
+    margin-top: -50px;
+  }
+
+  .arrows i {
+    font-size: 25px;
+  }
+}
+
+/*----------------Home Page--------------------*/
+.Hslider {
+  width: 100%;
+}
+.Hslider .arrows i {
+  position: absolute;
+  font-size: 35px;
+  color: rgb(150, 142, 150);
+  cursor: pointer;
+  top: 44%;
+  font-weight: bolder !important;
+}
+
+.Hslides img {
+  width: 100%;
+  height: 84vh;
+}
+
+.Hslides {
+  position: relative;
+  display: none;
+}
+
+.layer {
+  position: absolute;
+  height: 84vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.575);
+  top: 0%;
+}
+
+.homeInfo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.layer h1 {
+  color: var(--orange);
+  font-weight: bolder;
+}
+
+.layer p {
+  color: white;
+  font-size: 18px;
+}
+
+.layer .bton a {
+  color: white;
+  background-color: var(--blue);
+  border-radius: 10px;
+  padding: 8px;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.layer .bton {
+  display: flex;
+  justify-content: center;
+}
+
+.Hslider .arrows i:hover,
+.hSlides i:hover,
+.hSlides .activeslide {
+  color: white;
+}
+
+.hSlides {
+  display: flex;
+  justify-content: center;
+}
+
+.hSlides i {
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.527);
+  cursor: pointer;
+  padding: 5px;
+  margin-top: -50px;
+  z-index: 1000;
+}
+
+.trips {
+  margin-top: 50px;
+}
+
+.trips h1 {
+  color: var(--blue);
+  font-weight: bolder;
+  text-align: center;
+}
+
+.trips p {
+  font-size: 18px;
+  text-align: center;
+}
+
+.tabList {
+  display: flex;
+  justify-content: end;
+  margin-right: 150px;
+  margin-top: 50px;
+}
+
+.tabList li {
+  list-style: none;
+  margin: auto 10px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.tabList .tab {
+  width: fit-content;
+  padding: 12px;
+  height: fit-content;
+  background-color: var(--blue);
+  border-radius: 10px;
+  color: white;
+}
+
+/*********************** Form   ******************************/
+
+.content {
+  width: 100%;
+  height: 95vh;
+  background-color: #687aff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content .last {
+  width: 60%;
+}
+
+.last h1 {
+  text-align: center;
+  font-size: 50px;
+  color: white;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.content form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+span {
+  color: rgb(177, 170, 76);
+  margin: 2px;
+}
+
+.content .last input,
+.content .last textarea {
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid white;
+  font-size: 20px;
+  margin: 30px 10px;
+  padding-bottom: 25px;
+  padding-left: 10px;
+  text-transform: capitalize;
+  color: white;
+}
+
+.content .last textarea {
+  width: 97%;
+  height: 100px;
+  color: white;
+}
+
+.content .last input {
+  width: 47%;
+  height: 45px;
+}
+
+.content .last button {
+  width: 190px;
+  height: 70px;
+  text-transform: capitalize;
+  border: none;
+  border: 1px solid white;
+  background-color: transparent;
+  color: white;
+  font-size: 20px;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+::placeholder {
+  color: rgba(255, 255, 255, 0.596);
+}
+
+@media (max-width: 1111px) {
+  .content .last {
+    width: 80%;
+  }
+}
+
+@media (max-width: 834px) {
+  .content .last {
+    width: 60%;
+  }
+
+  .content .last h1 {
+    font-size: 45px;
+    margin-bottom: 40px;
+  }
+
+  .content .last textarea {
+    width: 97%;
+    height: 80px;
+  }
+
+  .content .last input {
+    width: 97%;
+    height: 35px;
+    margin: 30px 10px;
+    padding-bottom: 15px;
+  }
+
+  .content {
+    height: 130vh;
+  }
+}
+
+@media (max-width: 700px) {
+  .Hslides img {
+    height: 65vh;
+  }
+
+  .layer {
+    height: 65vh;
+  }
+
+  .layer h1 {
+    font-size: 25px;
+  }
+
+  .Hslider .arrows i {
+    top: 38% !important;
+  }
+
+  .layer p {
+    font-size: 16px;
+  }
+
+  .layer .bton a {
+    font-size: 16px;
+  }
+
+  .tabList {
+    justify-content: start;
+    margin-right: 20px;
+    margin-top: 50px;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 562px) {
+  .content .last {
+    width: 90%;
+  }
+
+  .content .last h1 {
+    font-size: 45px;
+    margin-bottom: 40px;
+  }
+
+  .content .last textarea {
+    width: 97%;
+    height: 80px;
+  }
+
+  .content .last input {
+    width: 97%;
+    height: 35px;
+    margin: 30px 10px;
+    padding-bottom: 15px;
+  }
+
+  .trips h1 {
+    font-size: 25px;
+  }
+
+  .trips p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 450px) {
+  .Hslides img {
+    height: 45vh;
+  }
+
+  .layer {
+    height: 45vh;
+  }
+
+  .layer h1 {
+    display: none;
+  }
+
+  .layer p {
+    font-size: 16px;
+  }
+
+  .layer .bton a {
+    font-size: 14px;
+  }
+
+  .Hslider .arrows i {
+    top: 28% !important;
+  }
+}
+
+@media (max-width: 390px) {
+  .Hslides img {
+    height: 35vh;
+  }
+
+  .layer {
+    height: 35vh;
+  }
+
+  .layer p {
+    font-size: 14px;
+  }
+
+  .layer .bton a {
+    font-size: 12px;
+  }
+}
+@media (min-height: 800px){
+  .content {
+    height: 100vh;
+  }
+}
